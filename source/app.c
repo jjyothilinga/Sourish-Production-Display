@@ -13,20 +13,19 @@
 */
 typedef struct _APP
 {
-	//Variables to handle dot matrix display
-	UINT8 model[MSG_LENGTH];
-	UINT8 eepUpdate;
+	
+	UINT8 data[NO_OF_DATA];				//Variables to handle input data
+	UINT8 model[MSG_LENGTH + 1];			//Variables to handle dot matrix display
+	UINT8 digit[NO_OF_DIGITS];			//Variables to handle seven segment display
+	UINT8 mmdupdateFlag;
 
-	//Variables to handle seven segment display
-    UINT8 Actual[NO_OF_DIGITS];
-    UINT8 Plan[NO_OF_DIGITS];
 
 }APP;
 
 #pragma idata APP_DATA
-APP app = {{0},0};
+APP app = {{0},{0},{0},0};
 MMD_Config mmdConfig = {0};
-UINT8 data[8] = "ABCDEFGH";
+UINT8 temp[9] = "IDEONICS";
 #pragma idata
 
 
@@ -58,10 +57,12 @@ void APP_init(void)
 
 	for(i = 0; i < 8; i++)
 	{
-		app.model[i] = data[i];
+		app.model[i] = temp[i];
 
-		app.Plan[i] = i + '0';
-		app.Actual[i] = i + '0';
+	}
+	for(i = 0; i < 20; i++)
+	{
+		app.digit[i] = '0';
 	}
 
 	
@@ -74,9 +75,11 @@ void APP_init(void)
 	mmdConfig.scrollSpeed = 0;//SCROLL_SPEED_LOW;
 	MMD_configSegment( 0 , &mmdConfig);
 
-
-	DigitDisplay_updateBufferPartial(app.Plan,0,8);
-	DigitDisplay_updateBufferPartial(app.Actual,8,8);  
+	//Digit initialization
+	DigitDisplay_updateBuffer(app.digit);
+	DigitDisplay_DotOn(11,1);
+	DigitDisplay_DotOn(14,1);
+	DigitDisplay_DotOn(18,1);
 
 
 }
@@ -97,8 +100,7 @@ void APP_task(void)
 {
 
 	UINT8 i;
-	volatile UINT16 temp;
-
+	
 
 
 }
@@ -136,15 +138,59 @@ eMBRegHoldingCB( UCHAR * pucRegBuffer, USHORT usAddress, USHORT usNRegs,
 	{
 	case MB_REG_WRITE:
 
-    
+//	app.updateFlag = TRUE ;
 	while( no_regs > 0)
 	{
 
-		app.model[i++] = * pucRegBuffer++;
+		app.data[i++] = * pucRegBuffer++;
 
 		starting_add++;
 		no_regs	--;
+
 	}
+
+	for(i = 0; i < 8; i++)
+	{
+		if(app.model[i] != app.data[i + 2])
+		{
+			app.mmdupdateFlag = TRUE;
+		}
+	}
+
+
+
+		for(i = 0; i < 8; i++)
+		{
+			app.model[i] = app.data[i + 2];
+	
+		}
+		for(i = 0;i < 2; i++)
+		{
+			app.digit[i] = app.data[i];
+		}
+		for(i = 2;i < 20 ; i++)
+		{
+			app.digit[i] = app.data[ i + 8];
+		}
+
+		if(app.mmdupdateFlag == TRUE )
+		{
+			app.mmdupdateFlag = FALSE;		
+			MMD_clearSegment(0);
+			mmdConfig.startAddress = 0;
+			mmdConfig.length = MMD_MAX_CHARS;
+			mmdConfig.symbolCount = strlen(app.model);
+			mmdConfig.symbolBuffer = app.model;
+			mmdConfig.scrollSpeed = 0;//SCROLL_SPEED_LOW;
+			MMD_configSegment( 0 , &mmdConfig);
+		}
+
+		DigitDisplay_updateBuffer(app.digit);
+		DigitDisplay_DotOn(11,1);
+		DigitDisplay_DotOn(14,1);
+		DigitDisplay_DotOn(18,1);
+
+
 //	app.valueBuffer[i++] = 0;
     break;
 
@@ -168,19 +214,6 @@ eMBRegHoldingCB( UCHAR * pucRegBuffer, USHORT usAddress, USHORT usNRegs,
 	}
    	 break;
 	}
-
-	DigitDisplay_updateBufferPartial(app.model, 0, 2);
-	//DigitDisplay_updateBuffer(app.model);
-
-	MMD_clearSegment(0);
-	mmdConfig.startAddress = 0;
-	mmdConfig.length = MMD_MAX_CHARS;
-	mmdConfig.symbolCount = 8;//strlen(app.model);
-	mmdConfig.symbolBuffer = app.model+2;
-	mmdConfig.scrollSpeed = 0;//SCROLL_SPEED_LOW;
-	MMD_configSegment( 0 , &mmdConfig);
-
-	DigitDisplay_updateBufferPartial((app.model+10), 2, 8);
 
 	return eStatus;
   }

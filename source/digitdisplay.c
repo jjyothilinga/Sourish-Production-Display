@@ -22,7 +22,7 @@ typedef enum
 	BLINK 
 }DISPLAY_MODE;
 
-#define MAX_DIGITS_ROW (10)
+
 /*
 *------------------------------------------------------------------------------
 * INCLUDES
@@ -30,6 +30,7 @@ typedef enum
 */
 
 #include "digitdisplay.h"
+#include "config.h"
 
 
 /*------------------------------------------------------------------------------
@@ -417,8 +418,8 @@ static void writeToDisplayPort( UINT8 value1, UINT8 value2 )
 	DIGIT_PORT_C2 = 1;			
 	DIGIT_PORT_C3 = 1;			
 
-	DATA_PORT_A = ~value1;
-	DATA_PORT_B = ~value2;
+	DATA_PORT_A = ~value2;
+	DATA_PORT_B = ~value1;
 
 	if(digitDisplay.digitIndex < 8)
 	{
@@ -449,62 +450,49 @@ static void writeToDisplayPort( UINT8 value1, UINT8 value2 )
 
 }
 #else
-static void writeToDisplayPort( UINT8 value )
+static void writeToDisplayPort( UINT8 value1, UINT8 value2 )
+
 {
-	DIGIT_SEL_A = 0;		//switch off display
-	DIGIT_SEL_B = 0;
-	DIGIT_SEL_C = 0;
-	DIGIT_SEL_D = 0;
-	DIGIT_SEL_E = 0;
-	DIGIT_SEL_F = 0;
-	DIGIT_SEL_G = 0;
-	DIGIT_SEL_H = 0;
-	
-	Delay10us(1);
 
-	DISPLAY_PORT = value;
-	
-	switch( digitDisplay.digitIndex )
+	UINT8 shift = 0x01;
+
+	DIGIT_PORT_A = 0X00;		//switch off display
+	DIGIT_PORT_B = 0X00;
+	DIGIT_PORT_C0 = 0;			
+	DIGIT_PORT_C1 = 0;			
+	DIGIT_PORT_C2 = 0;			
+	DIGIT_PORT_C3 = 0;			
+
+	DATA_PORT_A = ~value1;
+	DATA_PORT_B = ~value2;
+
+	if(digitDisplay.digitIndex < 8)
 	{
-		case 0:
-			DIGIT_SEL_A = 1;
-			
-		break;
-		case 1:
-   			DIGIT_SEL_B = 1;
-
-		break;
-		case 2:
-   			DIGIT_SEL_C = 1;
-
-   		break;
-
-		case 3:
-   			DIGIT_SEL_D = 1;
-		
-   		break;
-
-		case 4:
-   			DIGIT_SEL_E = 1;
-		
-   		break;
-
-		case 5:
-   			DIGIT_SEL_F = 1;
-		
-   		break;
-		case 6:
-   			DIGIT_SEL_G = 1;
-		
-   		break;
-
-		case 7:
-   			DIGIT_SEL_H = 1;
-        break;
-
-		default:
-		break;
+		shift <<= digitDisplay.digitIndex;
+	
+		DIGIT_PORT_A = shift;
+		DIGIT_PORT_B = shift;
 	}
+	else
+	{
+	
+		switch(digitDisplay.digitIndex)
+		{
+			case 8: 
+				DIGIT_PORT_C0 = 1;
+				DIGIT_PORT_C2 = 1;
+			break;
+	
+			case 9: 
+				DIGIT_PORT_C1 = 1;
+				DIGIT_PORT_C3 = 1;
+			break;
+	
+			default:
+			break;
+		}
+	}
+
 }
 #endif
 

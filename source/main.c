@@ -35,8 +35,6 @@
 
 #include "board.h"
 #include "timer.h"	// Timer related functions
-#include "uart.h"
-#include "communication.h"
 #include "heartBeat.h"
 #include "app.h"
 #include "mmd.h"
@@ -177,7 +175,7 @@ void main(void)
 
 	BRD_init();
 	HB_init();
-	DigitDisplay_init(20);
+	DigitDisplay_init(NO_OF_DIGITS);
 	MMD_init();  // Display initialization
 
 	
@@ -206,7 +204,7 @@ void main(void)
 
 		if(  heartBeatCount >= 2000 )
 		{
-			//APP_task();
+
 			HB_task();
 			heartBeatCount = 0;
 		}
@@ -216,6 +214,8 @@ void main(void)
 			MMD_task();
 			mmdUpdateCount = 0;
 		}
+
+	//	APP_task();
 
 		eMBPoll();	//modbus task		
  

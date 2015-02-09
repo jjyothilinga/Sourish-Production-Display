@@ -17,13 +17,19 @@
 #define COMMON_CATHODE
 
 
-//MMD module configuration
+/*----------------------------------------
+*	MMD MODULE Configuration
+*----------------------------------------*/
 #define MMD_MAX_CHARS		8
 #define MMD_MAX_SEGMENTS	1
 #define MMD_MAX_ADDRESS		128
 #define __MMD_STATIC__
 
+/*----------------------------------------
+*	DIGIT Configuration
+*----------------------------------------*/
 
+#define MAX_DIGITS_ROW (10)
 /*----------------------------------------
 *	TIMER Configuration
 *----------------------------------------*/
@@ -90,7 +96,8 @@ enum
 /*----------------------------------------
 *	APP CONFIGURATION
 *----------------------------------------*/
-#define MSG_LENGTH 		30
+#define NO_OF_DATA		30
+#define MSG_LENGTH 		8
 #define EEPROM_ADDRESS 	(0X10)
 
 
@@ -99,7 +106,7 @@ enum
 #define SET_PLAN 			0x81
 #define MODIFY_PLAN 		0x82
 
-#define NO_OF_DIGITS		(0X08)
+#define NO_OF_DIGITS		20
 #define MAX_COUNT			(9999)
 
 /*

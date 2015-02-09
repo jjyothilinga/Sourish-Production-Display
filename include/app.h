@@ -2,7 +2,6 @@
 #define APP_H
 
 #include "config.h"
-#include "communication.h"
 #include "mmd.h"
 #include "string.h"
 
