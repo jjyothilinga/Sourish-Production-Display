@@ -158,7 +158,8 @@ eMBRegHoldingCB( UCHAR * pucRegBuffer, USHORT usAddress, USHORT usNRegs,
 	}
 
 
-
+	if ( (app.data[0] != 0xFF ) && (app.data[1] != 0xFF ))
+	{
 		for(i = 0; i < 8; i++)
 		{
 			app.model[i] = app.data[i + 2];
@@ -172,6 +173,7 @@ eMBRegHoldingCB( UCHAR * pucRegBuffer, USHORT usAddress, USHORT usNRegs,
 		{
 			app.digit[i] = app.data[ i + 8];
 		}
+	}
 
 		if(app.mmdupdateFlag == TRUE )
 		{

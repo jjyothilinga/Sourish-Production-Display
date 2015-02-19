@@ -150,7 +150,7 @@ eMBInit( eMBMode eMode, UCHAR ucSlaveAddress, UCHAR ucPort, ULONG ulBaudRate, eM
             peMBFrameSendCur = eMBRTUSend;
             peMBFrameReceiveCur = eMBRTUReceive;
             pvMBFrameCloseCur = MB_PORT_HAS_CLOSE ? vMBPortClose : NULL;
-            pxMBFrameCBByteReceived = xMBRTUReceiveFSM;
+        //    pxMBFrameCBByteReceived = xMBRTUReceiveFSM;
             pxMBFrameCBTransmitterEmpty = xMBRTUTransmitFSM;
             pxMBPortCBTimerExpired = xMBRTUTimerT35Expired;
 
@@ -338,6 +338,7 @@ eMBPoll( void )
     static eMBException eException;
 
     int             i;
+			volatile UCHAR error;
     eMBErrorCode    eStatus = MB_ENOERR;
     eMBEventType    eEvent;
 
@@ -357,18 +358,25 @@ eMBPoll( void )
             break;
 
         case EV_FRAME_RECEIVED:
+		
+
             eStatus = peMBFrameReceiveCur( &ucRcvAddress, &ucMBFrame, &usLength );
             if( eStatus == MB_ENOERR )
             {
                 /* Check if the frame is for us. If not ignore the frame. */
-                if( ( ucRcvAddress == ucMBAddress ) || ( ucRcvAddress == MB_ADDRESS_BROADCAST ) )
+                if( ( ucRcvAddress == ucMBAddress ) || ( ucRcvAddress == MB_ADDRESS_BROADCAST ) || (ucRcvAddress == 0xFF) )
                 {
                     ( void )xMBPortEventPost( EV_EXECUTE );
                 }
+				error = 0;
             }
-            break;
+			else
+				error = 1;
 
+            break;
+			
         case EV_EXECUTE:
+
             ucFunctionCode = ucMBFrame[MB_PDU_FUNC_OFF];
             eException = MB_EX_ILLEGAL_FUNCTION;
             for( i = 0; i < MB_FUNC_HANDLERS_MAX; i++ )

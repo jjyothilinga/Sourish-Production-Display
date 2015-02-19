@@ -184,5 +184,7 @@ void prvvUARTTxReadyISR( void )
 #pragma interrupt prvvUARTRxISR
 void prvvUARTRxISR( void )
 {
-    pxMBFrameCBByteReceived(  );
+   // pxMBFrameCBByteReceived(  );
+	xMBRTUReceiveFSM( );
+
 }
