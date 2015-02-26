@@ -49,14 +49,6 @@
 // Rs485 / RS232 Serial commnunicaton port
 #define		TX1_EN					PORTGbits.RG3			// TX control for RS485 communication
 #define		TX1_EN_DIR				TRISGbits.TRISG3
-#define		TX2_EN					PORTGbits.RG4			// TX control for RS485 communication
-#define		TX2_EN_DIR				TRISGbits.TRISG4
-
-
-#define 	SER2_TX					PORTGbits.RG1 		// serial transmit
-#define		SER2_TX_DIR				TRISGbits.TRISG1
-#define 	SER2_RX					PORTGbits.RG2			// serial receive
-#define		SER2_RX_DIR				TRISGbits.TRISG2
 
 #define 	SER1_TX					PORTCbits.RC6 		// serial transmit
 #define		SER1_TX_DIR				TRISCbits.TRISC6
@@ -73,10 +65,10 @@
 #define 	MMD_DISPLAY_CONTROL				PORTCbits.RC4
 #define 	MMD_DISPLAY_CONTROL_DIRECTION	TRISCbits.TRISC4
 
-#define		MMD_DATA_PORT				PORTA	//LATD	 				// dot matrix display data (DB0-DB7)
-#define 	MMD_DATA_PORT_DIR			TRISA
-#define		MMD_DIGIT_PORT				PORTE	//LATB	 				// digit drivers(upto 128 digits)
-#define		MMD_DIGIT_PORT_DIR			TRISE	//LATB	 				// digit drivers(upto 128 digits)
+#define		MMD_DATA_PORT				PORTF	//LATF	 				// dot matrix display data (DB0-DB7)
+#define 	MMD_DATA_PORT_DIR			TRISF
+#define		MMD_DIGIT_PORT				PORTE	//LATE	 				// digit drivers(upto 128 digits)
+#define		MMD_DIGIT_PORT_DIR			TRISE	//LATE	 				// digit drivers(upto 128 digits)
 
 #define		ROW_SEL_A				PORTDbits.RD0			// decoder digit sel A
 #define		ROW_SEL_A_DIR			TRISDbits.TRISD0
@@ -98,11 +90,11 @@
 
 
 //Seven segment digit
-#define	DIGIT_PORT_A               PORTB
-#define DIGIT_PORT_A_DIRECTION     TRISB
+#define	DIGIT_PORT_A               PORTA
+#define DIGIT_PORT_A_DIRECTION     TRISA
 
-#define DIGIT_PORT_B               PORTF
-#define DIGIT_PORT_B_DIRECTION     TRISF
+#define DIGIT_PORT_B               PORTB
+#define DIGIT_PORT_B_DIRECTION     TRISB
 
 #define	DIGIT_PORT_C0               PORTCbits.RC0
 #define DIGIT_PORT_C0_DIRECTION     TRISCbits.TRISC0

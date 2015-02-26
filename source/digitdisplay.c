@@ -22,7 +22,7 @@ typedef enum
 	BLINK 
 }DISPLAY_MODE;
 
-
+#define MAX_DIGITS_ROW (12)
 /*
 *------------------------------------------------------------------------------
 * INCLUDES
@@ -30,7 +30,6 @@ typedef enum
 */
 
 #include "digitdisplay.h"
-#include "config.h"
 
 
 /*------------------------------------------------------------------------------
@@ -125,7 +124,7 @@ BOOL DigitDisplay_init( UINT8 noDigits )
 		for( k = 0; k < 100; k++)
 		{
 			DigitDisplay_task();
-			DelayMs(3);
+			DelayMs(1);
 		}
 	
 	}
@@ -418,8 +417,8 @@ static void writeToDisplayPort( UINT8 value1, UINT8 value2 )
 	DIGIT_PORT_C2 = 1;			
 	DIGIT_PORT_C3 = 1;			
 
-	DATA_PORT_A = ~value2;
-	DATA_PORT_B = ~value1;
+	DATA_PORT_A = ~value1;
+	DATA_PORT_B = ~value2;
 
 	if(digitDisplay.digitIndex < 8)
 	{
@@ -434,13 +433,21 @@ static void writeToDisplayPort( UINT8 value1, UINT8 value2 )
 		switch(digitDisplay.digitIndex)
 		{
 			case 8: 
-				DIGIT_PORT_C0 = ~1;
-				DIGIT_PORT_C2 = ~1;
+				DIGIT_PORT_C0 = 1;
+
 			break;
 	
 			case 9: 
-				DIGIT_PORT_C1 = ~1;
-				DIGIT_PORT_C3 = ~1;
+
+				DIGIT_PORT_C1 = 1;
+			break;
+		
+			case 10: 
+				DIGIT_PORT_C2 = 1;
+			break;
+	
+			case 11: 
+				DIGIT_PORT_C3 = 1;
 			break;
 	
 			default:
@@ -451,20 +458,18 @@ static void writeToDisplayPort( UINT8 value1, UINT8 value2 )
 }
 #else
 static void writeToDisplayPort( UINT8 value1, UINT8 value2 )
-
 {
-
 	UINT8 shift = 0x01;
 
-	DIGIT_PORT_A = 0X00;		//switch off display
-	DIGIT_PORT_B = 0X00;
-	DIGIT_PORT_C0 = 0;			
-	DIGIT_PORT_C1 = 0;			
-	DIGIT_PORT_C2 = 0;			
-	DIGIT_PORT_C3 = 0;			
+	DIGIT_PORT_A = ~(0XFF);		//switch off display
+	DIGIT_PORT_B = ~(0XFF);
+	DIGIT_PORT_C0 = ~1;			
+	DIGIT_PORT_C1 = ~1;			
+	DIGIT_PORT_C2 = ~1;			
+	DIGIT_PORT_C3 = ~1;			
 
-	DATA_PORT_A = ~value1;
-	DATA_PORT_B = ~value2;
+	DATA_PORT_A = value1;
+	DATA_PORT_B = value2;
 
 	if(digitDisplay.digitIndex < 8)
 	{
@@ -480,11 +485,19 @@ static void writeToDisplayPort( UINT8 value1, UINT8 value2 )
 		{
 			case 8: 
 				DIGIT_PORT_C0 = 1;
-				DIGIT_PORT_C2 = 1;
+
 			break;
 	
 			case 9: 
+
 				DIGIT_PORT_C1 = 1;
+			break;
+		
+			case 10: 
+				DIGIT_PORT_C2 = 1;
+			break;
+	
+			case 11: 
 				DIGIT_PORT_C3 = 1;
 			break;
 	
@@ -494,6 +507,7 @@ static void writeToDisplayPort( UINT8 value1, UINT8 value2 )
 	}
 
 }
+
 #endif
 
 /*

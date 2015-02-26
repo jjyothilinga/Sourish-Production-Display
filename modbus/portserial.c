@@ -69,8 +69,8 @@ xMBPortSerialInit( UCHAR ucPORT, ULONG ulBaudRate, UCHAR ucDataBits, eMBParity e
 				USART_BRGH_HIGH;
 // configure USART
 
-	unsigned char bdValue;
-//	ULONG bdValue;
+//	unsigned char bdValue;
+	ULONG bdValue;
 /*	switch(ulBaudRate)
 	{
 		case 2400:
@@ -82,15 +82,11 @@ xMBPortSerialInit( UCHAR ucPORT, ULONG ulBaudRate, UCHAR ucDataBits, eMBParity e
 		break;
 
 		case 19200				:
-			bdValue = 104;	//19200bps
-		break;
-
-		case 38400				:
-			bdValue = 52;	//19200bps
+			bdValue = 25;	//19200bps
 		break;
 
 		case 57600:
-			bdValue = 35;	//57600bps
+			bdValue = 8;	//57600bps
 		break;
 		default:
 			bdValue = 51;		//default baudrate = 9600
@@ -184,7 +180,5 @@ void prvvUARTTxReadyISR( void )
 #pragma interrupt prvvUARTRxISR
 void prvvUARTRxISR( void )
 {
-   // pxMBFrameCBByteReceived(  );
-	xMBRTUReceiveFSM( );
-
+    pxMBFrameCBByteReceived(  );
 }

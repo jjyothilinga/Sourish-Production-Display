@@ -157,7 +157,6 @@ eMBRTUReceive( UCHAR * pucRcvAddress, UCHAR ** pucFrame, USHORT * pusLength )
     eMBErrorCode    eStatus = MB_ENOERR;
 	USHORT			crc;
 
-
     DISABLE_UART_RX_INTERRUPT(  );
     //assert( usRcvBufferPos < MB_SER_PDU_SIZE_MAX );
 	if( usRcvBufferPos >= MB_SER_PDU_SIZE_MAX )
@@ -183,7 +182,6 @@ eMBRTUReceive( UCHAR * pucRcvAddress, UCHAR ** pucFrame, USHORT * pusLength )
         *pucFrame = ( UCHAR * ) & ucRTUBuf[MB_SER_PDU_PDU_OFF];
         xFrameReceived = TRUE;
     }
-
 	}
     else
     {
@@ -233,28 +231,17 @@ eMBRTUSend( UCHAR ucSlaveAddress, const UCHAR * pucFrame, USHORT usLength )
     return eStatus;
 }
 
-//BOOL
-void xMBRTUReceiveFSM( void )
+BOOL
+xMBRTUReceiveFSM( void )
 {
-  //  BOOL            xTaskNeedSwitch = FALSE;
+    BOOL            xTaskNeedSwitch = FALSE;
     UCHAR           ucByte;
-	volatile unsigned char data;
+
     //assert( eSndState == STATE_TX_IDLE );
 	if( eSndState != STATE_TX_IDLE ) return FALSE;
 
     /* Always read the character. */
-//    ( void )xMBPortSerialGetByte( ( CHAR * ) & ucByte );   i changed
-
-		#ifdef __18F8722
-			data = Read1USART();
-		#else
-			data = ReadUSART();
-		#endif
-		
-			ucByte = data;
-		
-			
-		    PIR1bits.RC1IF = 0;	// Clear the interrupt flag
+    ( void )xMBPortSerialGetByte( ( CHAR * ) & ucByte );
 
     switch ( eRcvState )
     {
@@ -302,7 +289,7 @@ void xMBRTUReceiveFSM( void )
         vMBPortTimersEnable(  );
         break;
     }
-  //  return xTaskNeedSwitch;
+    return xTaskNeedSwitch;
 }
 
 BOOL
