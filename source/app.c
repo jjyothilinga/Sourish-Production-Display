@@ -50,7 +50,7 @@ UINT8 data[8] = "ABCDEFGH";
 
 void APP_init(void)
 {
-	UINT8 i;
+	UINT8 i,j;
 	UINT16 sbaudrate , saddress;
 	eMBErrorCode    eStatus;
 
@@ -62,6 +62,7 @@ void APP_init(void)
 	eStatus = eMBEnable(  );	/* Enable the Modbus Protocol Stack. */
 
 
+	
 
 }
 
@@ -185,14 +186,14 @@ update the individual buffer for display from input buffer
 	mmdConfig.scrollSpeed = 0;//SCROLL_SPEED_LOW;
 	MMD_configSegment( 0 , &mmdConfig);
 
-	DigitDisplay_updateBufferPartial(app.F1,12,2);
-	DigitDisplay_updateBufferPartial(app.F3,0,8);  
-	DigitDisplay_updateBufferPartial(app.F4,14,3);
-	DigitDisplay_updateBufferPartial(app.F5,17,3);  
-	DigitDisplay_updateBufferPartial(app.F6,20,4); 
-	DigitDisplay_DotOn(15,1);
-	DigitDisplay_DotOn(18,1);
-	DigitDisplay_DotOn(21,1);
+	DigitDisplay_updateBufferPartial(app.F4,0,3);
+	DigitDisplay_updateBufferPartial(app.F5,3,3);  
+	DigitDisplay_updateBufferPartial(app.F1,6,2);
+	DigitDisplay_updateBufferPartial(app.F3,12,8);  
+	DigitDisplay_updateBufferPartial(app.F6,8,4); 
+	DigitDisplay_DotOn(1,1);
+	DigitDisplay_DotOn(4,1);
+	DigitDisplay_DotOn(10,1);
 
 	return eStatus;
   }

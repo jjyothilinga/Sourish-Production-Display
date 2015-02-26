@@ -121,10 +121,10 @@ BOOL DigitDisplay_init( UINT8 noDigits )
 		{
 			digitDisplay.buffer[STATIC][j] = SEVENSEGMENT[i];	
 		}
-		for( k = 0; k < 100; k++)
+		for( k = 0; k < 50; k++)
 		{
 			DigitDisplay_task();
-			DelayMs(1);
+			DelayMs(2);
 		}
 	
 	}

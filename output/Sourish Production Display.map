@@ -1,5 +1,5 @@
 MPLINK 4.48, Linker
-Linker Map File - Created Thu Feb 26 10:04:04 2015
+Linker Map File - Created Thu Feb 26 13:00:06 2015
 
                                  Section Info
                   Section       Type    Address   Location Size(Bytes)
@@ -14,109 +14,109 @@ Linker Map File - Created Thu Feb 26 10:04:04 2015
      .code_digitdisplay.o       code   0x0029c4    program   0x000612
                .code_mb.o       code   0x002fd6    program   0x000606
             .code_mbrtu.o       code   0x0035dc    program   0x000514
-              .code_app.o       code   0x003af0    program   0x00042a
-          .code_mbutils.o       code   0x003f1a    program   0x0003a4
-            .code_timer.o       code   0x0042be    program   0x000386
-           .romdata_MMD.o    romdata   0x004644    program   0x000330
-       .code_portserial.o       code   0x004974    program   0x0002c8
-       .code_mbfuncdisc.o       code   0x004c3c    program   0x000270
-      .code_mbfuncinput.o       code   0x004eac    program   0x000258
-         .romdata_mbcrc.o    romdata   0x005104    program   0x000200
-      .code_mbfuncother.o       code   0x005304    program   0x000166
-            .code_mbcrc.o       code   0x00546a    program   0x0000fc
-        .code_porttimer.o       code   0x005566    program   0x0000f6
-            .code_board.o       code   0x00565c    program   0x0000d0
-             .code_main.o       code   0x00572c    program   0x0000ac
-                   STRING       code   0x0057d8    program   0x0000a6
-               _cinit_scn       code   0x00587e    program   0x00009e
-           .code_u1open.o       code   0x00591c    program   0x000084
-        .code_portevent.o       code   0x0059a0    program   0x000060
-         .code_fxd3232u.o       code   0x005a00    program   0x000048
-           .code_t3open.o       code   0x005a48    program   0x000042
-           .code_t1open.o       code   0x005a8a    program   0x000042
-           .code_u1read.o       code   0x005acc    program   0x00003e
-                     PROG       code   0x005b0a    program   0x00003c
-          .code_t3write.o       code   0x005b46    program   0x000038
-          .code_t1write.o       code   0x005b7e    program   0x000038
-          .code_t0write.o       code   0x005bb6    program   0x000038
-           .code_t0open.o       code   0x005bee    program   0x000038
-         .code_fxd1616u.o       code   0x005c26    program   0x00002c
-              D1KTCYXCODE       code   0x005c52    program   0x000020
-                    .code       code   0x005c72    program   0x000020
-             _startup_scn       code   0x005c92    program   0x00001c
-        .code_heartBeat.o       code   0x005cae    program   0x00001a
-              D10TCYXCODE       code   0x005cc8    program   0x000016
-               mmd_data_i    romdata   0x005cde    program   0x0000b6
-           DISPLAY_DATA_i    romdata   0x005d94    program   0x00003b
-               APP_DATA_i    romdata   0x005dcf    program   0x00005d
-        .romdata_u1open.o    romdata   0x005e2c    program   0x000000
-   .romdata_mbfunccoils.o    romdata   0x005e2c    program   0x000000
-.romdata_interruptvector.o    romdata   0x005e2c    program   0x000000
-        .idata_u1open.o_i    romdata   0x005e2c    program   0x000000
-    .romdata_mbfuncdisc.o    romdata   0x005e2c    program   0x000000
-     .romdata_heartBeat.o    romdata   0x005e2c    program   0x000000
- .romdata_mbfuncholding.o    romdata   0x005e2c    program   0x000000
-       .romdata_t3write.o    romdata   0x005e2c    program   0x000000
-   .romdata_mbfuncinput.o    romdata   0x005e2c    program   0x000000
-  .romdata_digitdisplay.o    romdata   0x005e2c    program   0x000000
-      .romdata_fxd3232u.o    romdata   0x005e2c    program   0x000000
-   .romdata_mbfuncother.o    romdata   0x005e2c    program   0x000000
-         .romdata_board.o    romdata   0x005e2c    program   0x000000
-        .romdata___init.o    romdata   0x005e2c    program   0x000000
-       .romdata_mbutils.o    romdata   0x005e2c    program   0x000000
-             .stringtable    romdata   0x005e2c    program   0x000000
-           .romdata_app.o    romdata   0x005e2c    program   0x000000
-         .romdata_c018i.o    romdata   0x005e2c    program   0x000000
-      .romdata_fxd1616u.o    romdata   0x005e2c    program   0x000000
-         .idata_timer.o_i    romdata   0x005e2c    program   0x00001c
-         .romdata_timer.o    romdata   0x005e2c    program   0x000000
-        .romdata_t3open.o    romdata   0x005e2c    program   0x000000
-        .romdata_t1open.o    romdata   0x005e2c    program   0x000000
-            .romdata_mb.o    romdata   0x005e2c    program   0x000000
-        .idata_u1read.o_i    romdata   0x005e2c    program   0x000000
-     .romdata_portevent.o    romdata   0x005e2c    program   0x000000
-        .romdata_u1read.o    romdata   0x005e2c    program   0x000000
-        .idata_u1defs.o_i    romdata   0x005e2c    program   0x000000
-    .romdata_portserial.o    romdata   0x005e2c    program   0x000000
-        .romdata_u1defs.o    romdata   0x005e2c    program   0x000000
-        .romdata_t0open.o    romdata   0x005e2c    program   0x000000
-     .romdata_porttimer.o    romdata   0x005e2c    program   0x000000
-       .romdata_t0write.o    romdata   0x005e2c    program   0x000000
-          .romdata_main.o    romdata   0x005e2c    program   0x000000
-         .romdata_mbrtu.o    romdata   0x005e2c    program   0x000000
-       .romdata_t1write.o    romdata   0x005e2c    program   0x000000
-       .idata_t0write.o_i    romdata   0x005e48    program   0x000000
-       .idata_t3write.o_i    romdata   0x005e48    program   0x000000
-        .idata_t1open.o_i    romdata   0x005e48    program   0x000000
-        .idata_t0open.o_i    romdata   0x005e48    program   0x000000
-       .idata_t1write.o_i    romdata   0x005e48    program   0x000000
-        .idata_t3open.o_i    romdata   0x005e48    program   0x000000
-       .idata_mbutils.o_i    romdata   0x005e48    program   0x000000
-         .idata_mbrtu.o_i    romdata   0x005e48    program   0x000002
-     .idata_porttimer.o_i    romdata   0x005e48    program   0x000000
-    .idata_portserial.o_i    romdata   0x005e48    program   0x000000
-     .idata_portevent.o_i    romdata   0x005e48    program   0x000000
-   .idata_mbfuncother.o_i    romdata   0x005e4a    program   0x000000
-   .idata_mbfuncinput.o_i    romdata   0x005e4a    program   0x000000
- .idata_mbfuncholding.o_i    romdata   0x005e4a    program   0x000000
-    .idata_mbfuncdisc.o_i    romdata   0x005e4a    program   0x000000
-   .idata_mbfunccoils.o_i    romdata   0x005e4a    program   0x000000
-         .idata_mbcrc.o_i    romdata   0x005e4a    program   0x000000
-            .idata_mb.o_i    romdata   0x005e4a    program   0x000041
-          .idata_main.o_i    romdata   0x005e8b    program   0x000000
-.idata_interruptvector.o_i    romdata   0x005e8b    program   0x000000
-     .idata_heartBeat.o_i    romdata   0x005e8b    program   0x000001
-  .idata_digitdisplay.o_i    romdata   0x005e8c    program   0x00000b
-      .idata_fxd3232u.o_i    romdata   0x005e8c    program   0x000000
-      .idata_fxd1616u.o_i    romdata   0x005e8c    program   0x000000
-           .idata_app.o_i    romdata   0x005e97    program   0x000000
-         .idata_board.o_i    romdata   0x005e97    program   0x000000
-        .idata___init.o_i    romdata   0x005e97    program   0x000000
-         .idata_c018i.o_i    romdata   0x005e97    program   0x000000
-           .idata_MMD.o_i    romdata   0x005e97    program   0x000000
-           .code_u1defs.o       code   0x005e98    program   0x000000
-  .code_interruptvector.o       code   0x005e98    program   0x000000
-            .code_c018i.o       code   0x005e98    program   0x000000
+              .code_app.o       code   0x003af0    program   0x000432
+          .code_mbutils.o       code   0x003f22    program   0x0003a4
+            .code_timer.o       code   0x0042c6    program   0x000386
+           .romdata_MMD.o    romdata   0x00464c    program   0x000330
+       .code_portserial.o       code   0x00497c    program   0x0002c8
+       .code_mbfuncdisc.o       code   0x004c44    program   0x000270
+      .code_mbfuncinput.o       code   0x004eb4    program   0x000258
+         .romdata_mbcrc.o    romdata   0x00510c    program   0x000200
+      .code_mbfuncother.o       code   0x00530c    program   0x000166
+            .code_mbcrc.o       code   0x005472    program   0x0000fc
+        .code_porttimer.o       code   0x00556e    program   0x0000f6
+            .code_board.o       code   0x005664    program   0x0000d0
+             .code_main.o       code   0x005734    program   0x0000ac
+                   STRING       code   0x0057e0    program   0x0000a6
+               _cinit_scn       code   0x005886    program   0x00009e
+           .code_u1open.o       code   0x005924    program   0x000084
+        .code_portevent.o       code   0x0059a8    program   0x000060
+         .code_fxd3232u.o       code   0x005a08    program   0x000048
+           .code_t3open.o       code   0x005a50    program   0x000042
+           .code_t1open.o       code   0x005a92    program   0x000042
+           .code_u1read.o       code   0x005ad4    program   0x00003e
+                     PROG       code   0x005b12    program   0x00003c
+          .code_t3write.o       code   0x005b4e    program   0x000038
+          .code_t1write.o       code   0x005b86    program   0x000038
+          .code_t0write.o       code   0x005bbe    program   0x000038
+           .code_t0open.o       code   0x005bf6    program   0x000038
+         .code_fxd1616u.o       code   0x005c2e    program   0x00002c
+              D1KTCYXCODE       code   0x005c5a    program   0x000020
+                    .code       code   0x005c7a    program   0x000020
+             _startup_scn       code   0x005c9a    program   0x00001c
+        .code_heartBeat.o       code   0x005cb6    program   0x00001a
+              D10TCYXCODE       code   0x005cd0    program   0x000016
+               mmd_data_i    romdata   0x005ce6    program   0x0000b6
+           DISPLAY_DATA_i    romdata   0x005d9c    program   0x00003b
+               APP_DATA_i    romdata   0x005dd7    program   0x00005d
+        .romdata_u1open.o    romdata   0x005e34    program   0x000000
+   .romdata_mbfunccoils.o    romdata   0x005e34    program   0x000000
+.romdata_interruptvector.o    romdata   0x005e34    program   0x000000
+        .idata_u1open.o_i    romdata   0x005e34    program   0x000000
+    .romdata_mbfuncdisc.o    romdata   0x005e34    program   0x000000
+     .romdata_heartBeat.o    romdata   0x005e34    program   0x000000
+ .romdata_mbfuncholding.o    romdata   0x005e34    program   0x000000
+       .romdata_t3write.o    romdata   0x005e34    program   0x000000
+   .romdata_mbfuncinput.o    romdata   0x005e34    program   0x000000
+  .romdata_digitdisplay.o    romdata   0x005e34    program   0x000000
+      .romdata_fxd3232u.o    romdata   0x005e34    program   0x000000
+   .romdata_mbfuncother.o    romdata   0x005e34    program   0x000000
+         .romdata_board.o    romdata   0x005e34    program   0x000000
+        .romdata___init.o    romdata   0x005e34    program   0x000000
+       .romdata_mbutils.o    romdata   0x005e34    program   0x000000
+             .stringtable    romdata   0x005e34    program   0x000000
+           .romdata_app.o    romdata   0x005e34    program   0x000000
+         .romdata_c018i.o    romdata   0x005e34    program   0x000000
+      .romdata_fxd1616u.o    romdata   0x005e34    program   0x000000
+         .idata_timer.o_i    romdata   0x005e34    program   0x00001c
+         .romdata_timer.o    romdata   0x005e34    program   0x000000
+        .romdata_t3open.o    romdata   0x005e34    program   0x000000
+        .romdata_t1open.o    romdata   0x005e34    program   0x000000
+            .romdata_mb.o    romdata   0x005e34    program   0x000000
+        .idata_u1read.o_i    romdata   0x005e34    program   0x000000
+     .romdata_portevent.o    romdata   0x005e34    program   0x000000
+        .romdata_u1read.o    romdata   0x005e34    program   0x000000
+        .idata_u1defs.o_i    romdata   0x005e34    program   0x000000
+    .romdata_portserial.o    romdata   0x005e34    program   0x000000
+        .romdata_u1defs.o    romdata   0x005e34    program   0x000000
+        .romdata_t0open.o    romdata   0x005e34    program   0x000000
+     .romdata_porttimer.o    romdata   0x005e34    program   0x000000
+       .romdata_t0write.o    romdata   0x005e34    program   0x000000
+          .romdata_main.o    romdata   0x005e34    program   0x000000
+         .romdata_mbrtu.o    romdata   0x005e34    program   0x000000
+       .romdata_t1write.o    romdata   0x005e34    program   0x000000
+       .idata_t0write.o_i    romdata   0x005e50    program   0x000000
+       .idata_t3write.o_i    romdata   0x005e50    program   0x000000
+        .idata_t1open.o_i    romdata   0x005e50    program   0x000000
+        .idata_t0open.o_i    romdata   0x005e50    program   0x000000
+       .idata_t1write.o_i    romdata   0x005e50    program   0x000000
+        .idata_t3open.o_i    romdata   0x005e50    program   0x000000
+       .idata_mbutils.o_i    romdata   0x005e50    program   0x000000
+         .idata_mbrtu.o_i    romdata   0x005e50    program   0x000002
+     .idata_porttimer.o_i    romdata   0x005e50    program   0x000000
+    .idata_portserial.o_i    romdata   0x005e50    program   0x000000
+     .idata_portevent.o_i    romdata   0x005e50    program   0x000000
+   .idata_mbfuncother.o_i    romdata   0x005e52    program   0x000000
+   .idata_mbfuncinput.o_i    romdata   0x005e52    program   0x000000
+ .idata_mbfuncholding.o_i    romdata   0x005e52    program   0x000000
+    .idata_mbfuncdisc.o_i    romdata   0x005e52    program   0x000000
+   .idata_mbfunccoils.o_i    romdata   0x005e52    program   0x000000
+         .idata_mbcrc.o_i    romdata   0x005e52    program   0x000000
+            .idata_mb.o_i    romdata   0x005e52    program   0x000041
+          .idata_main.o_i    romdata   0x005e93    program   0x000000
+.idata_interruptvector.o_i    romdata   0x005e93    program   0x000000
+     .idata_heartBeat.o_i    romdata   0x005e93    program   0x000001
+  .idata_digitdisplay.o_i    romdata   0x005e94    program   0x00000b
+      .idata_fxd3232u.o_i    romdata   0x005e94    program   0x000000
+      .idata_fxd1616u.o_i    romdata   0x005e94    program   0x000000
+           .idata_app.o_i    romdata   0x005e9f    program   0x000000
+         .idata_board.o_i    romdata   0x005e9f    program   0x000000
+        .idata___init.o_i    romdata   0x005e9f    program   0x000000
+         .idata_c018i.o_i    romdata   0x005e9f    program   0x000000
+           .idata_MMD.o_i    romdata   0x005e9f    program   0x000000
+           .code_u1defs.o       code   0x005ea0    program   0x000000
+  .code_interruptvector.o       code   0x005ea0    program   0x000000
+            .code_c018i.o       code   0x005ea0    program   0x000000
     .config_300001_main.o    romdata   0x300001    program   0x000001
     .config_300002_main.o    romdata   0x300002    program   0x000001
     .config_300003_main.o    romdata   0x300003    program   0x000001
@@ -210,10 +210,10 @@ Linker Map File - Created Thu Feb 26 10:04:04 2015
                               Program Memory Usage 
                                Start         End      
                            ---------   ---------      
-                            0x000000    0x005e96      
+                            0x000000    0x005e9e      
                             0x300001    0x300006      
                             0x300008    0x30000d      
-            24227 out of 132120 program addresses used, program memory utilization is 18%
+            24235 out of 132120 program addresses used, program memory utilization is 18%
 
 
 
@@ -222,13 +222,13 @@ Linker Map File - Created Thu Feb 26 10:04:04 2015
                 ---------  ---------  ---------  --------- ---------                
                  APP_init   0x003af0    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\app.c
                  APP_task   0x003b78    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\app.c
-                 BRD_init   0x00565c    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\board.c
-                    D10_1   0x005cd8    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-                     D10x   0x005cd0    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-                    D1K_1   0x005c5e    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-                     D1Kx   0x005c5c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-              Delay10TCYx   0x005cc8    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-              Delay1KTCYx   0x005c52    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+                 BRD_init   0x005664    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\board.c
+                    D10_1   0x005ce0    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+                     D10x   0x005cd8    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+                    D1K_1   0x005c66    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+                     D1Kx   0x005c64    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+              Delay10TCYx   0x005cd0    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+              Delay1KTCYx   0x005c5a    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
        DigitDisplay_DotOn   0x002dcc    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\digitdisplay.c
     DigitDisplay_blinkOff   0x002d16    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\digitdisplay.c
      DigitDisplay_blinkOn   0x002cde    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\digitdisplay.c
@@ -241,13 +241,13 @@ DigitDisplay_updateBufferBinary   0x002c06    program     extern C:\Users\IDEONI
 DigitDisplay_updateBufferPartial   0x002e76    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\digitdisplay.c
  DigitDisplay_updateDigit   0x002c5a    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\digitdisplay.c
          EnableInterrupts   0x00002a    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\interruptvector.c
-                 FXD1616U   0x005c26    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616u.c
-                 FXD3232U   0x005a00    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232u.c
-                 FXM1616U   0x005b0a    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616u.asm
-             FontTable5x7   0x004644    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\MMD.c
-               GetAppTime   0x0045f4    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\timer.c
-                  HB_init   0x005cae    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\heartBeat.c
-                  HB_task   0x005cb4    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\heartBeat.c
+                 FXD1616U   0x005c2e    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616u.c
+                 FXD3232U   0x005a08    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232u.c
+                 FXM1616U   0x005b12    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616u.asm
+             FontTable5x7   0x00464c    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\MMD.c
+               GetAppTime   0x0045fc    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\timer.c
+                  HB_init   0x005cb6    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\heartBeat.c
+                  HB_task   0x005cbc    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\heartBeat.c
          MMD_changeSymbol   0x000c52    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\MMD.c
          MMD_clearSegment   0x000e20    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\MMD.c
         MMD_configSegment   0x0003a8    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\MMD.c
@@ -255,40 +255,40 @@ DigitDisplay_updateBufferPartial   0x002e76    program     extern C:\Users\IDEON
        MMD_refreshDisplay   0x001802    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\MMD.c
        MMD_setScrollSpeed   0x000bfa    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\MMD.c
                  MMD_task   0x001062    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\MMD.c
-               Open1USART   0x00591c    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\pmc_common\USART\u1open.c
-               OpenTimer0   0x005bee    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t0open.c
-               OpenTimer1   0x005a8a    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t1open.c
-               OpenTimer3   0x005a48    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t3open.c
-               Read1USART   0x005acc    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\pmc_common\USART\u1read.c
-                 TMR0_ISR   0x0042be    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\timer.c
-                TMR0_init   0x004520    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\timer.c
-                 TMR1_ISR   0x0043ac    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\timer.c
-                TMR1_init   0x004566    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\timer.c
-                 TMR3_ISR   0x004466    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\timer.c
-                TMR3_init   0x0045ae    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\timer.c
+               Open1USART   0x005924    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\pmc_common\USART\u1open.c
+               OpenTimer0   0x005bf6    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t0open.c
+               OpenTimer1   0x005a92    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t1open.c
+               OpenTimer3   0x005a50    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t3open.c
+               Read1USART   0x005ad4    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\pmc_common\USART\u1read.c
+                 TMR0_ISR   0x0042c6    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\timer.c
+                TMR0_init   0x004528    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\timer.c
+                 TMR1_ISR   0x0043b4    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\timer.c
+                TMR1_init   0x00456e    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\timer.c
+                 TMR3_ISR   0x00446e    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\timer.c
+                TMR3_init   0x0045b6    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\timer.c
        WriteDataToDisplay   0x001a28    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\MMD.c
-              WriteTimer0   0x005bb6    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t0write.c
-              WriteTimer1   0x005b7e    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t1write.c
-              WriteTimer3   0x005b46    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t3write.c
-              _2jContinue   0x00584e    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
-                   _3jEnd   0x005858    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
-              _4jContinue   0x00580c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memcpy.asm
-                   _5jEnd   0x005816    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memcpy.asm
-        _D10TCYXCODE_000A   0x005cd2    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000C   0x005cd4    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000E   0x005cd6    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-        _D1KTCYXCODE_0010   0x005c62    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-        _D1KTCYXCODE_0016   0x005c68    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+              WriteTimer0   0x005bbe    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t0write.c
+              WriteTimer1   0x005b86    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t1write.c
+              WriteTimer3   0x005b4e    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t3write.c
+              _2jContinue   0x005856    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+                   _3jEnd   0x005860    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+              _4jContinue   0x005814    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memcpy.asm
+                   _5jEnd   0x00581e    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memcpy.asm
+        _D10TCYXCODE_000A   0x005cda    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000C   0x005cdc    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000E   0x005cde    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D1KTCYXCODE_0010   0x005c6a    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+        _D1KTCYXCODE_0016   0x005c70    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
            ___if_lbl00001   0x000010    program     static                          
            ___if_lbl00002   0x000018    program     static                          
            ___if_lbl00003   0x000020    program     static                          
            ___if_lbl00004   0x000028    program     static                          
-       ___return_lbl00000   0x005a46    program     static                          
-       ___return_lbl00000   0x005c50    program     static                          
+       ___return_lbl00000   0x005a4e    program     static                          
+       ___return_lbl00000   0x005c58    program     static                          
        ___return_lbl00000   0x000004    program     static                          
        ___return_lbl00000   0x000028    program     static                          
-       ___return_lbl00001   0x005cac    program     static                          
-       ___return_lbl00002   0x00591a    program     static                          
+       ___return_lbl00001   0x005cb4    program     static                          
+       ___return_lbl00002   0x005922    program     static                          
                __config_0   0x300001    program     static C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\main.c
                __config_1   0x300002    program     static C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\main.c
               __config_10   0x30000c    program     static C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\main.c
@@ -302,28 +302,28 @@ DigitDisplay_updateBufferPartial   0x002e76    program     extern C:\Users\IDEON
                __config_8   0x30000a    program     static C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\main.c
                __config_9   0x30000b    program     static C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\main.c
                    __init   0x000006    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
-            __zero_memory   0x005c72    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f8722.asm
-                _do_cinit   0x00587e    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+            __zero_memory   0x005c7a    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f8722.asm
+                _do_cinit   0x005886    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
                    _entry   0x000000    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                   _false   0x005a42    program     static                          
-                 _startup   0x005c92    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                 aucCRCHi   0x005104    program     static C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\rtu\mbcrc.c
-                 aucCRCLo   0x005204    program     static C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\rtu\mbcrc.c
+                   _false   0x005a4a    program     static                          
+                 _startup   0x005c9a    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                 aucCRCHi   0x00510c    program     static C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\rtu\mbcrc.c
+                 aucCRCLo   0x00520c    program     static C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\rtu\mbcrc.c
                  clearBit   0x00010a    program     static C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\MMD.c
-                compare_l   0x005c88    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f8722.asm
-                copy_loop   0x0058f0    program     static                          
-            copy_one_byte   0x0058f6    program     static                          
-                     done   0x00591a    program     static                          
-             done_copying   0x005904    program     static                          
+                compare_l   0x005c90    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f8722.asm
+                copy_loop   0x0058f8    program     static                          
+            copy_one_byte   0x0058fe    program     static                          
+                     done   0x005922    program     static                          
+             done_copying   0x00590c    program     static                          
                  eMBClose   0x0032f0    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\mb.c
                eMBDisable   0x00336e    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\mb.c
                 eMBEnable   0x003332    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\mb.c
          eMBFuncReadCoils   0x0023b2    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\functions\mbfunccoils.c
-eMBFuncReadDiscreteInputs   0x004c3c    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\functions\mbfuncdisc.c
+eMBFuncReadDiscreteInputs   0x004c44    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\functions\mbfuncdisc.c
 eMBFuncReadHoldingRegister   0x001d6c    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\functions\mbfuncholding.c
- eMBFuncReadInputRegister   0x004eac    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\functions\mbfuncinput.c
+ eMBFuncReadInputRegister   0x004eb4    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\functions\mbfuncinput.c
 eMBFuncReadWriteMultipleHoldingRegister   0x001fc4    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\functions\mbfuncholding.c
-     eMBFuncReportSlaveID   0x0053f8    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\functions\mbfuncother.c
+     eMBFuncReportSlaveID   0x005400    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\functions\mbfuncother.c
          eMBFuncWriteCoil   0x002624    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\functions\mbfunccoils.c
 eMBFuncWriteHoldingRegister   0x001a78    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\functions\mbfuncholding.c
 eMBFuncWriteMultipleCoils   0x002796    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\functions\mbfunccoils.c
@@ -335,57 +335,57 @@ eMBFuncWriteMultipleHoldingRegister   0x001b68    program     extern C:\Users\ID
                eMBRTUSend   0x003832    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\rtu\mbrtu.c
               eMBRTUStart   0x003720    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\rtu\mbrtu.c
                eMBRTUStop   0x00373c    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\rtu\mbrtu.c
-            eMBRegCoilsCB   0x003ef2    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\app.c
-         eMBRegDiscreteCB   0x003f06    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\app.c
+            eMBRegCoilsCB   0x003efa    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\app.c
+         eMBRegDiscreteCB   0x003f0e    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\app.c
           eMBRegHoldingCB   0x003bb0    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\app.c
             eMBRegInputCB   0x003b96    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\app.c
             eMBRegisterCB   0x0030dc    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\mb.c
-            eMBSetSlaveID   0x005304    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\functions\mbfuncother.c
-                  endloop   0x005c4c    program     static                          
+            eMBSetSlaveID   0x00530c    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\functions\mbfuncother.c
+                  endloop   0x005c54    program     static                          
                    getBit   0x000094    program     static C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\MMD.c
            high_interrupt   0x000008    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\interruptvector.c
-                     jEnd   0x005860    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
-                     jEnd   0x00587c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
-                     jEnd   0x00581c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memcpy.asm
-                    jLoop   0x005872    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
-                    jLoop   0x005842    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
-                    jLoop   0x005800    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memcpy.asm
-         leftBitPackTable   0x004968    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\MMD.c
-                     loop   0x005ca2    program     static                          
-                     loop   0x005a0e    program     static                          
-                     loop   0x005c30    program     static                          
-                   loop_h   0x005c80    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f8722.asm
-                   loop_l   0x005c8a    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f8722.asm
-                     main   0x00572c    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\main.c
-                   memcpy   0x0057d8    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memcpy.asm
-                   memset   0x00582e    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
-    prveMBError2Exception   0x004280    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\functions\mbutils.c
-      prvvTIMERExpiredISR   0x0055ae    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\porttimer.c
-            prvvUARTRxISR   0x004b90    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\portserial.c
-       prvvUARTTxReadyISR   0x004ae4    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\portserial.c
-        rightBitPackTable   0x00495c    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\MMD.c
+                     jEnd   0x005868    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+                     jEnd   0x005884    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
+                     jEnd   0x005824    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memcpy.asm
+                    jLoop   0x00587a    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
+                    jLoop   0x00584a    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+                    jLoop   0x005808    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memcpy.asm
+         leftBitPackTable   0x004970    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\MMD.c
+                     loop   0x005caa    program     static                          
+                     loop   0x005a16    program     static                          
+                     loop   0x005c38    program     static                          
+                   loop_h   0x005c88    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f8722.asm
+                   loop_l   0x005c92    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f8722.asm
+                     main   0x005734    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\main.c
+                   memcpy   0x0057e0    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memcpy.asm
+                   memset   0x005836    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+    prveMBError2Exception   0x004288    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\functions\mbutils.c
+      prvvTIMERExpiredISR   0x0055b6    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\porttimer.c
+            prvvUARTRxISR   0x004b98    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\portserial.c
+       prvvUARTTxReadyISR   0x004aec    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\portserial.c
+        rightBitPackTable   0x004964    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\MMD.c
                    setBit   0x0000d4    program     static C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\MMD.c
-                   strlen   0x005862    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
-                     test   0x005898    program     static                          
-                usMBCRC16   0x00546a    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\rtu\mbcrc.c
-      vMBPortSerialEnable   0x004974    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\portserial.c
-     vMBPortTimersDisable   0x0055aa    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\porttimer.c
-      vMBPortTimersEnable   0x005594    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\porttimer.c
+                   strlen   0x00586a    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
+                     test   0x0058a0    program     static                          
+                usMBCRC16   0x005472    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\rtu\mbcrc.c
+      vMBPortSerialEnable   0x00497c    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\portserial.c
+     vMBPortTimersDisable   0x0055b2    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\porttimer.c
+      vMBPortTimersEnable   0x00559c    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\porttimer.c
                  validate   0x002e32    program     static C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\digitdisplay.c
        writeToDisplayPort   0x002d58    program     static C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\digitdisplay.c
-          xMBPortEventGet   0x0059ca    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\portevent.c
-         xMBPortEventInit   0x0059a0    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\portevent.c
-         xMBPortEventPost   0x0059aa    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\portevent.c
-     xMBPortSerialGetByte   0x004ab4    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\portserial.c
-        xMBPortSerialInit   0x0049aa    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\portserial.c
-     xMBPortSerialPutByte   0x004a7e    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\portserial.c
-        xMBPortTimersInit   0x005566    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\porttimer.c
+          xMBPortEventGet   0x0059d2    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\portevent.c
+         xMBPortEventInit   0x0059a8    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\portevent.c
+         xMBPortEventPost   0x0059b2    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\portevent.c
+     xMBPortSerialGetByte   0x004abc    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\portserial.c
+        xMBPortSerialInit   0x0049b2    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\portserial.c
+     xMBPortSerialPutByte   0x004a86    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\portserial.c
+        xMBPortTimersInit   0x00556e    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\porttimer.c
          xMBRTUReceiveFSM   0x003942    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\rtu\mbrtu.c
     xMBRTUTimerT35Expired   0x003a9e    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\rtu\mbrtu.c
         xMBRTUTransmitFSM   0x003a10    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\rtu\mbrtu.c
-           xMBUtilGetBits   0x00413e    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\functions\mbutils.c
-           xMBUtilSetBits   0x003f1a    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\functions\mbutils.c
-               zero_block   0x005c80    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f8722.asm
+           xMBUtilGetBits   0x004146    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\functions\mbutils.c
+           xMBUtilSetBits   0x003f22    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\functions\mbutils.c
+               zero_block   0x005c88    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f8722.asm
                    ADCON0   0x000fc2       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f8722.asm
                ADCON0bits   0x000fc2       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f8722.asm
                    ADCON1   0x000fc1       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f8722.asm
@@ -839,101 +839,101 @@ DigitDisplay_updateBufferPartial   0x002e76    program     extern C:\Users\IDEON
                  APP_task   0x003b78    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\app.c
             eMBRegInputCB   0x003b96    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\app.c
           eMBRegHoldingCB   0x003bb0    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\app.c
-            eMBRegCoilsCB   0x003ef2    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\app.c
-         eMBRegDiscreteCB   0x003f06    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\app.c
-           xMBUtilSetBits   0x003f1a    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\functions\mbutils.c
-           xMBUtilGetBits   0x00413e    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\functions\mbutils.c
-    prveMBError2Exception   0x004280    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\functions\mbutils.c
-                 TMR0_ISR   0x0042be    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\timer.c
-                 TMR1_ISR   0x0043ac    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\timer.c
-                 TMR3_ISR   0x004466    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\timer.c
-                TMR0_init   0x004520    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\timer.c
-                TMR1_init   0x004566    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\timer.c
-                TMR3_init   0x0045ae    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\timer.c
-               GetAppTime   0x0045f4    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\timer.c
-             FontTable5x7   0x004644    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\MMD.c
-        rightBitPackTable   0x00495c    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\MMD.c
-         leftBitPackTable   0x004968    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\MMD.c
-      vMBPortSerialEnable   0x004974    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\portserial.c
-        xMBPortSerialInit   0x0049aa    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\portserial.c
-     xMBPortSerialPutByte   0x004a7e    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\portserial.c
-     xMBPortSerialGetByte   0x004ab4    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\portserial.c
-       prvvUARTTxReadyISR   0x004ae4    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\portserial.c
-            prvvUARTRxISR   0x004b90    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\portserial.c
-eMBFuncReadDiscreteInputs   0x004c3c    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\functions\mbfuncdisc.c
- eMBFuncReadInputRegister   0x004eac    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\functions\mbfuncinput.c
-                 aucCRCHi   0x005104    program     static C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\rtu\mbcrc.c
-                 aucCRCLo   0x005204    program     static C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\rtu\mbcrc.c
-            eMBSetSlaveID   0x005304    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\functions\mbfuncother.c
-     eMBFuncReportSlaveID   0x0053f8    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\functions\mbfuncother.c
-                usMBCRC16   0x00546a    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\rtu\mbcrc.c
-        xMBPortTimersInit   0x005566    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\porttimer.c
-      vMBPortTimersEnable   0x005594    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\porttimer.c
-     vMBPortTimersDisable   0x0055aa    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\porttimer.c
-      prvvTIMERExpiredISR   0x0055ae    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\porttimer.c
-                 BRD_init   0x00565c    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\board.c
-                     main   0x00572c    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\main.c
-                   memcpy   0x0057d8    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memcpy.asm
-                    jLoop   0x005800    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memcpy.asm
-              _4jContinue   0x00580c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memcpy.asm
-                   _5jEnd   0x005816    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memcpy.asm
-                     jEnd   0x00581c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memcpy.asm
-                   memset   0x00582e    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
-                    jLoop   0x005842    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
-              _2jContinue   0x00584e    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
-                   _3jEnd   0x005858    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
-                     jEnd   0x005860    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
-                   strlen   0x005862    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
-                    jLoop   0x005872    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
-                     jEnd   0x00587c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
-                _do_cinit   0x00587e    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                     test   0x005898    program     static                          
-                copy_loop   0x0058f0    program     static                          
-            copy_one_byte   0x0058f6    program     static                          
-             done_copying   0x005904    program     static                          
-                     done   0x00591a    program     static                          
-       ___return_lbl00002   0x00591a    program     static                          
-               Open1USART   0x00591c    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\pmc_common\USART\u1open.c
-         xMBPortEventInit   0x0059a0    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\portevent.c
-         xMBPortEventPost   0x0059aa    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\portevent.c
-          xMBPortEventGet   0x0059ca    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\portevent.c
-                 FXD3232U   0x005a00    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232u.c
-                     loop   0x005a0e    program     static                          
-                   _false   0x005a42    program     static                          
-       ___return_lbl00000   0x005a46    program     static                          
-               OpenTimer3   0x005a48    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t3open.c
-               OpenTimer1   0x005a8a    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t1open.c
-               Read1USART   0x005acc    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\pmc_common\USART\u1read.c
-                 FXM1616U   0x005b0a    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616u.asm
-              WriteTimer3   0x005b46    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t3write.c
-              WriteTimer1   0x005b7e    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t1write.c
-              WriteTimer0   0x005bb6    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t0write.c
-               OpenTimer0   0x005bee    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t0open.c
-                 FXD1616U   0x005c26    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616u.c
-                     loop   0x005c30    program     static                          
-                  endloop   0x005c4c    program     static                          
-       ___return_lbl00000   0x005c50    program     static                          
-              Delay1KTCYx   0x005c52    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-                     D1Kx   0x005c5c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-                    D1K_1   0x005c5e    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-        _D1KTCYXCODE_0010   0x005c62    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-        _D1KTCYXCODE_0016   0x005c68    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-            __zero_memory   0x005c72    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f8722.asm
-               zero_block   0x005c80    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f8722.asm
-                   loop_h   0x005c80    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f8722.asm
-                compare_l   0x005c88    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f8722.asm
-                   loop_l   0x005c8a    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f8722.asm
-                 _startup   0x005c92    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                     loop   0x005ca2    program     static                          
-       ___return_lbl00001   0x005cac    program     static                          
-                  HB_init   0x005cae    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\heartBeat.c
-                  HB_task   0x005cb4    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\heartBeat.c
-              Delay10TCYx   0x005cc8    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-                     D10x   0x005cd0    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000A   0x005cd2    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000C   0x005cd4    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000E   0x005cd6    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-                    D10_1   0x005cd8    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+            eMBRegCoilsCB   0x003efa    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\app.c
+         eMBRegDiscreteCB   0x003f0e    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\app.c
+           xMBUtilSetBits   0x003f22    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\functions\mbutils.c
+           xMBUtilGetBits   0x004146    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\functions\mbutils.c
+    prveMBError2Exception   0x004288    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\functions\mbutils.c
+                 TMR0_ISR   0x0042c6    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\timer.c
+                 TMR1_ISR   0x0043b4    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\timer.c
+                 TMR3_ISR   0x00446e    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\timer.c
+                TMR0_init   0x004528    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\timer.c
+                TMR1_init   0x00456e    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\timer.c
+                TMR3_init   0x0045b6    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\timer.c
+               GetAppTime   0x0045fc    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\timer.c
+             FontTable5x7   0x00464c    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\MMD.c
+        rightBitPackTable   0x004964    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\MMD.c
+         leftBitPackTable   0x004970    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\MMD.c
+      vMBPortSerialEnable   0x00497c    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\portserial.c
+        xMBPortSerialInit   0x0049b2    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\portserial.c
+     xMBPortSerialPutByte   0x004a86    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\portserial.c
+     xMBPortSerialGetByte   0x004abc    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\portserial.c
+       prvvUARTTxReadyISR   0x004aec    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\portserial.c
+            prvvUARTRxISR   0x004b98    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\portserial.c
+eMBFuncReadDiscreteInputs   0x004c44    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\functions\mbfuncdisc.c
+ eMBFuncReadInputRegister   0x004eb4    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\functions\mbfuncinput.c
+                 aucCRCHi   0x00510c    program     static C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\rtu\mbcrc.c
+                 aucCRCLo   0x00520c    program     static C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\rtu\mbcrc.c
+            eMBSetSlaveID   0x00530c    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\functions\mbfuncother.c
+     eMBFuncReportSlaveID   0x005400    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\functions\mbfuncother.c
+                usMBCRC16   0x005472    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\rtu\mbcrc.c
+        xMBPortTimersInit   0x00556e    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\porttimer.c
+      vMBPortTimersEnable   0x00559c    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\porttimer.c
+     vMBPortTimersDisable   0x0055b2    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\porttimer.c
+      prvvTIMERExpiredISR   0x0055b6    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\porttimer.c
+                 BRD_init   0x005664    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\board.c
+                     main   0x005734    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\main.c
+                   memcpy   0x0057e0    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memcpy.asm
+                    jLoop   0x005808    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memcpy.asm
+              _4jContinue   0x005814    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memcpy.asm
+                   _5jEnd   0x00581e    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memcpy.asm
+                     jEnd   0x005824    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memcpy.asm
+                   memset   0x005836    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+                    jLoop   0x00584a    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+              _2jContinue   0x005856    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+                   _3jEnd   0x005860    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+                     jEnd   0x005868    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+                   strlen   0x00586a    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
+                    jLoop   0x00587a    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
+                     jEnd   0x005884    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
+                _do_cinit   0x005886    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     test   0x0058a0    program     static                          
+                copy_loop   0x0058f8    program     static                          
+            copy_one_byte   0x0058fe    program     static                          
+             done_copying   0x00590c    program     static                          
+                     done   0x005922    program     static                          
+       ___return_lbl00002   0x005922    program     static                          
+               Open1USART   0x005924    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\pmc_common\USART\u1open.c
+         xMBPortEventInit   0x0059a8    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\portevent.c
+         xMBPortEventPost   0x0059b2    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\portevent.c
+          xMBPortEventGet   0x0059d2    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\modbus\portevent.c
+                 FXD3232U   0x005a08    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232u.c
+                     loop   0x005a16    program     static                          
+                   _false   0x005a4a    program     static                          
+       ___return_lbl00000   0x005a4e    program     static                          
+               OpenTimer3   0x005a50    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t3open.c
+               OpenTimer1   0x005a92    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t1open.c
+               Read1USART   0x005ad4    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\pmc_common\USART\u1read.c
+                 FXM1616U   0x005b12    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616u.asm
+              WriteTimer3   0x005b4e    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t3write.c
+              WriteTimer1   0x005b86    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t1write.c
+              WriteTimer0   0x005bbe    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t0write.c
+               OpenTimer0   0x005bf6    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t0open.c
+                 FXD1616U   0x005c2e    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616u.c
+                     loop   0x005c38    program     static                          
+                  endloop   0x005c54    program     static                          
+       ___return_lbl00000   0x005c58    program     static                          
+              Delay1KTCYx   0x005c5a    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+                     D1Kx   0x005c64    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+                    D1K_1   0x005c66    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+        _D1KTCYXCODE_0010   0x005c6a    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+        _D1KTCYXCODE_0016   0x005c70    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+            __zero_memory   0x005c7a    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f8722.asm
+               zero_block   0x005c88    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f8722.asm
+                   loop_h   0x005c88    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f8722.asm
+                compare_l   0x005c90    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f8722.asm
+                   loop_l   0x005c92    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f8722.asm
+                 _startup   0x005c9a    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     loop   0x005caa    program     static                          
+       ___return_lbl00001   0x005cb4    program     static                          
+                  HB_init   0x005cb6    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\heartBeat.c
+                  HB_task   0x005cbc    program     extern C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\heartBeat.c
+              Delay10TCYx   0x005cd0    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+                     D10x   0x005cd8    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000A   0x005cda    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000C   0x005cdc    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000E   0x005cde    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+                    D10_1   0x005ce0    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
                __config_0   0x300001    program     static C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\main.c
                __config_1   0x300002    program     static C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\main.c
                __config_2   0x300003    program     static C:\Users\IDEONICS-BNG\Documents\GitHub\Sourish_Production_Display\source\main.c
