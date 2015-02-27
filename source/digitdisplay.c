@@ -115,19 +115,34 @@ BOOL DigitDisplay_init( UINT8 noDigits )
 	digitDisplay.dispBuffer = digitDisplay.buffer[STATIC];	//set initial display buffer to data(i.e. buffer[0])
 
 #ifdef __DISPLAY_TEST__
+/*
 	for( i = 0; i < 11 ; i++)
 	{
 		for(j = 0 ; j < noDigits; j++)
 		{
 			digitDisplay.buffer[STATIC][j] = SEVENSEGMENT[i];	
 		}
-		for( k = 0; k < 50; k++)
+		for( k = 0; k < 150; k++)
 		{
 			DigitDisplay_task();
 			DelayMs(2);
 		}
 	
 	}
+*/
+
+
+for(j = 0; j < 12 ; j++)
+{
+	for( i = 0; i < 11 ; i++)
+	{
+		writeToDisplayPort( SEVENSEGMENT[i]| (0x80), SEVENSEGMENT[i]| (0x80) )	;
+		DelayMs(200);
+	}
+	digitDisplay.digitIndex++;
+}
+
+
 #endif	//__DISPLAY_TEST__
 	digitDisplay.digitIndex  = 0;
 	

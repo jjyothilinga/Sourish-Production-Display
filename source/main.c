@@ -215,6 +215,7 @@ void main(void)
 			mmdUpdateCount = 0;
 		}
 
+		APP_task();
 		eMBPoll();	//modbus task		
  
 		//ClrWdt();	

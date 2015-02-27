@@ -8,33 +8,36 @@
 
 /*
 *------------------------------------------------------------------------------
-* app - the app structure. 
+* Data Format
 XX ABCDEFGH XXXXXXXX XX.X XX.X XXX.X
 *------------------------------------------------------------------------------
 */
 typedef struct _APP
 {
-	//Variables to handle dot matrix display
+	//Buffer for Dot Matrix data
 	UINT8 F2[MSG_LENGTH];
-	UINT8 eepUpdate;
+	UINT8 Update;
 
-	//Variables to handle seven segment display
-    UINT8 F1[2];
-    UINT8 F3[8];
-    UINT8 F4[3];
-    UINT8 F5[3];
-    UINT8 F6[4];
-	UINT8 eMBdata[28];
+	//Buffers for Seven Segment Data
+    UINT8 F1[F1_LENGTH];
+    UINT8 F3[F3_LENGTH];
+    UINT8 F4[F4_LENGTH];
+    UINT8 F5[F5_LENGTH];
+    UINT8 F6[F6_LENGTH];
+
+//Modbus buffer
+	UINT8 eMBdata[NO_OF_DIGITS];
 
 }APP;
 
 #pragma idata APP_DATA
 APP app = {{0},0};
 MMD_Config mmdConfig = {0};
-UINT8 data[8] = "ABCDEFGH";
 #pragma idata
+UINT8 data[8] = "ABCDEFGH";
 
-
+void updateDigits(void);
+void updateMMD(void);
 
 /*
 *------------------------------------------------------------------------------
@@ -55,13 +58,14 @@ void APP_init(void)
 	eMBErrorCode    eStatus;
 
 	
-	sbaudrate = 19200;
-	saddress = 1;
+	sbaudrate = 19200;	//set baudrate
+	saddress = 1;		//slave address
+
 	//modbus configuration
 	eStatus = eMBInit( MB_RTU, ( UCHAR )saddress, 0, sbaudrate, MB_PAR_NONE);
 	eStatus = eMBEnable(  );	/* Enable the Modbus Protocol Stack. */
 
-
+//	updateMMD();
 	
 
 }
@@ -82,8 +86,34 @@ void APP_task(void)
 {
 
 	UINT8 i;
-	volatile UINT16 temp;
+	if(app.Update == TRUE )
+	{
+		for(i = 0; i < 8; i++)
+		{
+			app.F2[i] = app.eMBdata[(i+2)];
+			app.F3[i] = app.eMBdata[(i+10)];
+	
+			if( i < 4)
+			{
+				app.F6[i] = app.eMBdata[(i+26)];
+			}
+			if( i < 3)
+			{
+				app.F4[i] = app.eMBdata[(i+18)];
+				app.F5[i] = app.eMBdata[(i+22)];
+			}
+			if( i < 2)
+			{
+				app.F1[i] = app.eMBdata[i];
+			}
+		}
+	
+	updateDigits();
+	updateMMD();
+	app.Update = FALSE;
 
+	}
+	
 
 
 }
@@ -130,6 +160,7 @@ eMBRegHoldingCB( UCHAR * pucRegBuffer, USHORT usAddress, USHORT usNRegs,
 		starting_add++;
 		no_regs	--;
 	}
+	app.Update = TRUE;
 //	app.valueBuffer[i++] = 0;
     break;
 
@@ -156,7 +187,7 @@ eMBRegHoldingCB( UCHAR * pucRegBuffer, USHORT usAddress, USHORT usNRegs,
 /*--------------------------------------------------------------------
 update the individual buffer for display from input buffer	
 ----------------------------------------------------------------------*/
-
+/*
 	for(i = 0; i < 8; i++)
 	{
 		app.F2[i] = app.eMBdata[(i+2)];
@@ -164,37 +195,22 @@ update the individual buffer for display from input buffer
 
 		if( i < 4)
 		{
-			app.F6[i] = app.eMBdata[(i+24)];
+			app.F6[i] = app.eMBdata[(i+26)];
 		}
 		if( i < 3)
 		{
 			app.F4[i] = app.eMBdata[(i+18)];
-			app.F5[i] = app.eMBdata[(i+21)];
+			app.F5[i] = app.eMBdata[(i+22)];
 		}
 		if( i < 2)
 		{
-			app.F1[i] = app.eMBdata[(i)];
+			app.F1[i] = app.eMBdata[i];
 		}
 	}
 	
-
-	MMD_clearSegment(0);
-	mmdConfig.startAddress = 0;
-	mmdConfig.length = MMD_MAX_CHARS;
-	mmdConfig.symbolCount = strlen(app.F2);
-	mmdConfig.symbolBuffer = app.F2;
-	mmdConfig.scrollSpeed = 0;//SCROLL_SPEED_LOW;
-	MMD_configSegment( 0 , &mmdConfig);
-
-	DigitDisplay_updateBufferPartial(app.F4,0,3);
-	DigitDisplay_updateBufferPartial(app.F5,3,3);  
-	DigitDisplay_updateBufferPartial(app.F1,6,2);
-	DigitDisplay_updateBufferPartial(app.F3,12,8);  
-	DigitDisplay_updateBufferPartial(app.F6,8,4); 
-	DigitDisplay_DotOn(1,1);
-	DigitDisplay_DotOn(4,1);
-	DigitDisplay_DotOn(10,1);
-
+	updateDigits();
+	updateMMD();
+*/
 	return eStatus;
   }
 
@@ -212,3 +228,27 @@ eMBRegDiscreteCB( UCHAR * pucRegBuffer, USHORT usAddress, USHORT usNDiscrete )
     return MB_ENOREG;
 }
 
+
+
+void updateDigits(void)
+{
+	DigitDisplay_updateBufferPartial(app.F4,0,3);
+	DigitDisplay_updateBufferPartial(app.F5,3,3);  
+	DigitDisplay_updateBufferPartial(app.F1,6,2);
+	DigitDisplay_updateBufferPartial(app.F3,12,8);  
+	DigitDisplay_updateBufferPartial(app.F6,8,4); 
+	DigitDisplay_DotOn(1,1);
+	DigitDisplay_DotOn(4,1);
+	DigitDisplay_DotOn(10,1);
+}
+
+void updateMMD(void)
+{
+	MMD_clearSegment(0);
+	mmdConfig.startAddress = 0;
+	mmdConfig.length = MMD_MAX_CHARS;
+	mmdConfig.symbolCount = strlen(app.F2); 
+	mmdConfig.symbolBuffer = app.F2;//app.F2
+	mmdConfig.scrollSpeed = 0;//SCROLL_SPEED_LOW;
+	MMD_configSegment( 0 , &mmdConfig);
+}

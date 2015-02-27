@@ -90,17 +90,16 @@ enum
 /*----------------------------------------
 *	APP CONFIGURATION
 *----------------------------------------*/
-#define MSG_LENGTH 		30
-#define EEPROM_ADDRESS 	(0X10)
+#define MSG_LENGTH 		8
+
+#define NO_OF_DIGITS	30
+#define F1_LENGTH		2
+#define F3_LENGTH		8
+#define F4_LENGTH		3
+#define F5_LENGTH		3
+#define F6_LENGTH		4
 
 
-#define EPROM_ADD_PLAN  	0
-#define EPROM_ADD_ACTUAL 	4
-#define SET_PLAN 			0x81
-#define MODIFY_PLAN 		0x82
-
-#define NO_OF_DIGITS		(0X08)
-#define MAX_COUNT			(9999)
 
 /*
 *------------------------------------------------------------------------------
