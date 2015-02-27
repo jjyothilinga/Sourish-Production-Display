@@ -11,7 +11,7 @@ TMR tmr[3] = { 0 , 0 };
 
 UINT16 count = 0;
 UINT16 heartBeatCount  =0 ;
-UINT16 keypadUpdate_count  =0 ;
+UINT16 eMBUpdate_count  =0 ;
 UINT16 comUpdateCount = 0;
 UINT16 mmdUpdateCount = 0;
 
@@ -40,7 +40,7 @@ void TMR0_ISR(void)
   	INTCONbits.TMR0IF = 0;
 
 	++heartBeatCount;
-	++keypadUpdate_count;
+	++eMBUpdate_count;
 	++comUpdateCount;
 	++mmdUpdateCount;
 

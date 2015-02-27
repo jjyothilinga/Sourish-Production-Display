@@ -34,7 +34,7 @@ typedef struct _APP
 APP app = {{0},0};
 MMD_Config mmdConfig = {0};
 #pragma idata
-UINT8 data[8] = "ABCDEFGH";
+UINT8 data[10] = "12345678";
 
 void updateDigits(void);
 void updateMMD(void);
@@ -86,8 +86,10 @@ void APP_task(void)
 {
 
 	UINT8 i;
+ DISABLE_UART_RX_INTERRUPT();
 	if(app.Update == TRUE )
 	{
+		ENABLE_UART_RX_INTERRUPT();
 		for(i = 0; i < 8; i++)
 		{
 			app.F2[i] = app.eMBdata[(i+2)];
@@ -106,14 +108,19 @@ void APP_task(void)
 			{
 				app.F1[i] = app.eMBdata[i];
 			}
+
 		}
 	
 	updateDigits();
 	updateMMD();
+	DISABLE_UART_RX_INTERRUPT();
 	app.Update = FALSE;
+
+	ENABLE_UART_RX_INTERRUPT();
 
 	}
 	
+	ENABLE_UART_RX_INTERRUPT();
 
 
 }
@@ -160,7 +167,10 @@ eMBRegHoldingCB( UCHAR * pucRegBuffer, USHORT usAddress, USHORT usNRegs,
 		starting_add++;
 		no_regs	--;
 	}
+
+ DISABLE_UART_RX_INTERRUPT();
 	app.Update = TRUE;
+ENABLE_UART_RX_INTERRUPT();
 //	app.valueBuffer[i++] = 0;
     break;
 
@@ -232,11 +242,14 @@ eMBRegDiscreteCB( UCHAR * pucRegBuffer, USHORT usAddress, USHORT usNDiscrete )
 
 void updateDigits(void)
 {
-	DigitDisplay_updateBufferPartial(app.F4,0,3);
-	DigitDisplay_updateBufferPartial(app.F5,3,3);  
-	DigitDisplay_updateBufferPartial(app.F1,6,2);
-	DigitDisplay_updateBufferPartial(app.F3,12,8);  
-	DigitDisplay_updateBufferPartial(app.F6,8,4); 
+
+	DigitDisplay_updateFields(app.F3,12,8);
+	DigitDisplay_updateFields(app.F4,0,3);
+	DigitDisplay_updateFields(app.F5,3,3);  
+	DigitDisplay_updateFields(app.F1,6,2);
+  	DigitDisplay_updateFields(app.F6,8,4); 
+
+
 	DigitDisplay_DotOn(1,1);
 	DigitDisplay_DotOn(4,1);
 	DigitDisplay_DotOn(10,1);
@@ -248,7 +261,7 @@ void updateMMD(void)
 	mmdConfig.startAddress = 0;
 	mmdConfig.length = MMD_MAX_CHARS;
 	mmdConfig.symbolCount = strlen(app.F2); 
-	mmdConfig.symbolBuffer = app.F2;//app.F2
+	mmdConfig.symbolBuffer = app.F2;
 	mmdConfig.scrollSpeed = 0;//SCROLL_SPEED_LOW;
 	MMD_configSegment( 0 , &mmdConfig);
 }

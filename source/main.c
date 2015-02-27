@@ -90,7 +90,7 @@
 
 
 extern UINT32 TimerUpdate_count;
-extern UINT16 keypadUpdate_count;
+extern UINT16 eMBUpdate_count;
 
 
 /*
@@ -160,7 +160,7 @@ extern UINT16 mmdUpdateCount;
 */
 
 #define MMD_REFRESH_PERIOD	(65535 - 20000)
-#define TICK_PERIOD	(65535 - 2000) //250us
+#define TICK_PERIOD	(65535 - 8000) //500us
 
 
 void main(void)
@@ -216,7 +216,11 @@ void main(void)
 		}
 
 		APP_task();
-		eMBPoll();	//modbus task		
+		if(eMBUpdate_count >= 10)
+		{
+			eMBPoll();	//modbus task
+			eMBUpdate_count = 0;
+		}		
  
 		//ClrWdt();	
 	}

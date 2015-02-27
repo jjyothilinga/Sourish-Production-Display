@@ -483,6 +483,8 @@ static void writeToDisplayPort( UINT8 value1, UINT8 value2 )
 	DIGIT_PORT_C2 = ~1;			
 	DIGIT_PORT_C3 = ~1;			
 
+	Delay10us(1);
+
 	DATA_PORT_A = value1;
 	DATA_PORT_B = value2;
 
@@ -520,6 +522,7 @@ static void writeToDisplayPort( UINT8 value1, UINT8 value2 )
 			break;
 		}
 	}
+	Delay10us(1);
 
 }
 
@@ -598,6 +601,31 @@ BOOL DigitDisplay_updateBufferPartial(far UINT8 *buffer, UINT8 from, UINT8 lengt
 		else
 		{
 			digitDisplay.buffer[STATIC][i] = SEVENSEGMENT[buffer[j] - '0'];
+		}
+	}
+	digitDisplay.digitIndex = 0;
+	return SUCCESS;
+}
+
+
+BOOL DigitDisplay_updateFields(far UINT8 *buffer, UINT8 from, UINT8 length)
+{
+	UINT8 i = 0,j=0;
+	for ( i = 0 ; i < length ; i++)
+	{
+
+	//	if ( validate(buffer[i]) == FAILURE )
+		//	return FAILURE;
+	}
+	for ( i = 0; i < length ; i++,j++)
+	{
+		if( buffer[i] == ' ')
+		{
+			digitDisplay.buffer[STATIC][i + from] = SEVENSEGMENT[10];
+		}
+		else
+		{
+			digitDisplay.buffer[STATIC][i + from] = SEVENSEGMENT[buffer[i] - '0'];
 		}
 	}
 	digitDisplay.digitIndex = 0;

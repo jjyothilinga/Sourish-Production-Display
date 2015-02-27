@@ -254,4 +254,7 @@ BOOL DigitDisplay_updateBufferPartial(UINT8 *buffer, UINT8 from, UINT8 length);
 
 void DigitDisplay_blinkOn_ind(UINT16 blinkPeriod, UINT8 index);
 
+
+BOOL DigitDisplay_updateFields(far UINT8 *buffer, UINT8 from, UINT8 length);
+
 #endif
